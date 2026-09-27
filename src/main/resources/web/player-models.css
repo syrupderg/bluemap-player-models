@@ -1,0 +1,18 @@
+/* BlueMap Player Models Styling */
+
+/* Keep native BlueMap 2D player head icons hidden while keeping player name labels visible */
+#map-container .bm-marker-player > img,
+img[alt="playerhead"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    width: 0 !important;
+    pointer-events: none !important;
+}
+
+/* Ensure the player name label remains selectable and styled */
+.bm-marker-player .bm-player-name {
+    pointer-events: auto;
+    user-select: none;
+}

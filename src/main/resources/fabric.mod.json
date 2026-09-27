@@ -1,0 +1,32 @@
+{
+	"schemaVersion": 1,
+	"id": "bluemap-player-models",
+	"version": "${version}",
+	"name": "BlueMap Player Models",
+	"description": "Adds full 3D animated player models to BlueMap.",
+	"authors": [
+		"syrupderg"
+	],
+	"contact": {
+		"homepage": "https://https://github.com/syrupderg/bluemap-player-models",
+		"sources": "https://https://github.com/syrupderg/bluemap-player-models"
+	},
+	"license": "LGPL v3",
+	"icon": "assets/bluemap-player-models/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.syrup.bpm.BlueMapPlayerModels"
+		]
+	},
+	"mixins": [
+		"bluemap-player-models.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"bluemap": ">=5.27",
+		"fabric-api": "*"
+	}
+}
